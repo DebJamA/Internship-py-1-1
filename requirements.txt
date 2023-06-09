@@ -3,3 +3,9 @@ Flask==2.3.2 #01MAY2023 - for building web aps
 Jinja2==3.1.2 #28APR2022 - template engine
 Flask-SQLAlchemy==3.0.3 #31JAN2023 - for ORM
 Flask-Login==0.6.2 #25JULY2022 - for Flask user authentication and session management
+jsonschema==4.17.3 #29NOV2022 - JSON Schema validation for Python
+python-firebase==1.2 #21MAR2014 - Python interface to the Firebase's REST API
+firebase==4.0.1 #22FEB2023 - firebase REST API's
+firebase-admin==6.1.0 #02FEB2023 - allows you to manage users and validate tokens
+Pyrebase==3.0.27  #07JAN2017 - Python wrapper for the Firebase API that pipallows you to sign in users and generate tokens for server to validate
+requests==2.31.0 #22MAY2023 - HTTP library
