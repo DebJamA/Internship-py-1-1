@@ -1,33 +1,45 @@
-from flask import Flask, Blueprint, render_template, redirect, url_for, json
-from firebase import firebase
+from flask import Flask, Blueprint, render_template, redirect, url_for
 from jinja2 import Environment, PackageLoader, select_autoescape
+from firebase_admin import db
 
 views = Blueprint("views", __name__)
 
 app = Flask(__name__)
-firebase = firebase.FirebaseApplication("https://simco-financial-analyst-blog-default-rtdb.firebaseio.com/", None)
 
 env = Environment(
     loader=PackageLoader(__name__, 'templates'),
     autoescape=select_autoescape(['html', 'xml'])
 )
 
-# use custom method argument
-# https://flask.palletsprojects.com/en/1.1.x/quickstart/#http-methods
-@views.route('/', methods=['GET', 'POST'])
+@views.route('/')
 def index():
-    result = firebase.get("/data", None)
-    data = json.loads(result)
-    return render_template("posts.html", result=data)
+    template = env.get_template('posts.html')
+    # Get database reference
+    ref = db.reference('blog')
+    # Get all articles from reference
+    articles = ref.order_by_child('date_posted').get()
+    return template.render(articles=articles)
 
 @views.route('/article/<int:post_id>')
 def article_single(post_id):
-    data = firebase.get("simco-financial-analyst-blog-default-rtdb")
     template = env.get_template('single.html')
-    return template.render(item=json.loads(data))
+    # Get database reference
+    ref = db.reference('blog')
+    # Get all records from reference
+    records = ref.get()
+    # Define article variable
+    article = {}
+    # Iterate all records as item
+    for item in records:
+        # Check if item has property post_id equal to post_id, if so, add item as article value
+        if item.get('post_id') == post_id:
+            article = item
+            # Break for loop
+            break
+
+    return template.render(article=article)
 
 # the following routes do not have real functionality
-# the buttons redirect to views.index or views.login
 @views.route("/create")
 def create():
     return render_template('create.html')

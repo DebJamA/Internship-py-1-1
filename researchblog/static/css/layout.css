@@ -40,20 +40,6 @@
 #welcome {
     color:#32cd32 !important;
 }
-#blog {
-    color: bold #212529 !important;
-    font-weight: bold;
-}
-
-/* please login in alert */
-a#alert:link, a#alert:visited {
-    text-decoration:none;
-}
-
-a#alert:hover, a#alert:active {
-    color:#32cd32 !important;
-    text-decoration:none;
-}
 
 /* footer */
 #footer-spacer {
@@ -136,9 +122,9 @@ a.posts-title:hover, a.posts-title:active {
     text-decoration:none;
 }
 
-/* posts continue reading */
+/* posts read more */
 a.posts-reading:link {
-    color:#32cd32 !important;
+    color: #32cd32 !important;
     text-decoration-line:underline;
     text-decoration-color:#32cd32;
 }
@@ -150,7 +136,6 @@ a.posts-reading:visited {
 a.posts-reading:hover, a.posts-reading:active {
 	color:#32cd32;
     text-decoration-line: underline;
-    text-decoration-style: wavy;
     text-decoration-color:#32cd32;
 }
 /* ========== end of posts.html ========== */
@@ -158,17 +143,20 @@ a.posts-reading:hover, a.posts-reading:active {
     /* POSTS>HTML and SINGLE.HTML */
 /* article image*/
 .article_image {
-    border-width: medium;
+    border-width: 2px;
     border-style: solid;
-    border-color: #32cd32;
+    border-color: #212529;
     border-radius: 5px;
 }
     /* ========== end of posts.html and single.html ========== */
 
 /* SINGLE.HTML */
-/* single article category and analysis */
-.single {
-    color:#32cd32 !important;
+#singlecategory {
+    color: #32cd32;
+}
+#summarysection {
+    font-size: 30px;
+    color:#32cd32;
 }
 /* ========== end of single.html ========== */
 
