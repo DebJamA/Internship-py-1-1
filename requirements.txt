@@ -1,0 +1,6 @@
+#27JUNE2023 Python 3.11.3
+firebase #firebase REST API's
+firebase-admin #allows you to manage users and validate tokens
+Flask #for building web aps
+Jinja2 #template engine
+gunicorn #a Python HTTP server that allows Flask to run any Python app concurrently
