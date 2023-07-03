@@ -1,1 +1,1 @@
-worker: python main.py
+web: gunicorn Internship-py-1-1:app
