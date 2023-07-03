@@ -1,1 +1,1 @@
-web: gunicorn Internship-py-1-1:app
+web: gunicorn main:app
