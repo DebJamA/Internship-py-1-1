@@ -1,94 +1,48 @@
-# Internship-py-1-1  
+# Project: Financial Market News Blog (Internship-py-1-1)  
   
-# Deploying my Flask app via Heroku  
-All the code and configuration for this app is in the main (defeault) branch of my Internship-py-1-1 repo.  
+## Project Description
   
-https://simco-blog-db547b91756b.herokuapp.com  
+Scenario: I was hired by Simco Financial Services, Inc. (a fictional company) as a Python Developer on their Software Development Team.  
   
-___
+The Director of the Marketing Department has commissioned a project for the Team:  
+*to develop a solution that will enable the Financial Market Analysts to share research information with one another.*  
   
-## Setting Up for Deployment  
-1. Ensure app is running properly in local env  
+___  
   
-2. Update requirements.txt to include `guicorn` - when app is deployed to Heroku, these dependencies are automatically installed before app startup  
+## Project Deliverables
+
+The deliverables for this project are two web pages:  
   
-3. In the root of the application, create "Procfile" without an extension  
-  * Procfile tells Heroku which command(s) to run to start the app  
-  * `web: gunicorn -w 4 main`  
+1.  An index page that lists all the financial news articles posted by the financial analysts  
+    
+2.  An article analysis page that displays the full news article information along with the analysis written by the analyst  
+    
+When an analyst selects an article from the index page, the article analysis page displays the details for that selected article  
   
-4. Create free Heroku account with payment method  
+___  
   
-5. Install Heroku CLI
+## Project Tools  
   
-___
+| ![/static/community_logos/python-logo.png](https://staging.python.org/static/community_logos/python-logo.png =100x) |![Git logo](https://git-scm.com/images/logos/logomark-orange@2x.png "git" =40x) | ![Download the HTML5 Wordmark](https://www.w3.org/html/logo/img/mark-word-icon.png =50x) |  
+|:--------:|:--------:|:--------:|  
+| ![_images/flask-horizontal.png](https://flask.palletsprojects.com/en/2.3.x/_images/flask-horizontal.png =90x) | ![Firebase logo](https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-logomark.png "firebase" =35x) | ![File:CSS3 logo and wordmark.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649 =30x)  |  
+|          | ![Heroku logo](https://pbs.twimg.com/profile_images/689518720998252544/mOobZd_8_400x400.png =40x) |          |  
   
-## Creating Heroku App and Deploying App  
-1. Log in to Heroku  
-`% heroku login`  
+___  
   
-2. Create a main branch in the local git repo  
-`% git branch -c main`  
-`% git branch`  
-`% git checkout main`  
-`% git branch`  
-`% git add .`   
-`% git commit -m 'make it better'`  
+## Project Tasks  
+1. Setup development environment (Internship-py-1-1)  
+2. Create server and project entry points (Internship-py-1-2)  
+3. Create page templates (Internship-py-1-3)  
+4. Display data from Firebase (Internship-py-1-4)  
+5. Deploy web application on Heroku (Internship-py-1-5)  
   
-3. Create Heroku app  
-`% heroku create`  
-```
-Output:  
-Creating app... done, ⬢ historic-haleakala-49710  
-https://historic-haleakala-49710-c674e93d8219.herokuapp.com/  
-https://git.heroku.com/historic-haleakala-49710.git  
-```  
+___  
   
-4. Refresh the Heroku page to see the app name:  
-***historic-haleakala-49710***  
+## Simco Blog  
   
+The main (default) branch of the Internship-py-1-1 repo is the final working code and configuration for this web app that was deployed on Heroku.  
   
-5. Rename the Heroku remote  
-`% heroku rename simco-blog`  
-```
-Output:  
-Renaming historic-haleakala-49710 to simco-blog... done  
-https://historic-haleakala-49710-c674e93d8219.herokuapp.com/  
-https://git.heroku.com/simco-blog.git  
-Git remote heroku updated  
-```  
-  
-6. Refresh the Heroku page to see the app name:  
-***simco-blog***  
+___  
   
   
-7. Confirm Heroku remote has been set for app  
-`% git remote -v`  
-```
-Output:  
-heroku  https://git.heroku.com/simco-blog.git (fetch)  
-heroku  https://git.heroku.com/simco-blog.git (push)  
-origin  https://github.com/DebJamA/Internship-py-1-1.git (fetch)  
-origin  https://github.com/DebJamA/Internship-py-1-1.git (push)  
-```  
-  
-8. Deploy app: push code from local repo main branch to the Heroku remote repo  
-`% git push heroku main`  
-```
-Output:  
-. . .  
-remote: https://simco-blog-db547b91756b.herokuapp.com/ deployed to Heroku
-. . .  
-remote: Verifying deploy... done.  
-To https://git.heroku.com/simco-blog.git  
- * [new branch]      main -> main  
-```  
-  
-9. Ensure an instance of app is running  
-`% heroku ps:scale web=1`  
-```
-Output:  
-Scaling dynos... done, now running web at 1:Basic  
-```  
-  
-10. Visit the app at this URL or use code  
-`% heroku open`  
