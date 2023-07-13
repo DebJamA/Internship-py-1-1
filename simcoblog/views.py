@@ -14,7 +14,7 @@ def index ():
            '<br>' \
            'Cant Go To Article'
 
-@views.route ('/article/int:post_id')
+@views.route ('/testing/int:post_id')
 def article_single ():
     return 'This Fake Article' \
            '<br>' \
