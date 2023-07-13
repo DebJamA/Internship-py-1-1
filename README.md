@@ -1,5 +1,7 @@
 # Internship-py-1-1:  Setup the Development Environment  
   
+---  
+  
 ## Set up system for development  
   
 1. Ensure Python is installed:  
@@ -124,4 +126,5 @@ To https://github.com/DebJamA/Internship-py-1-1.git
 branch 'Internship-py-1-1' set up to track 'origin/Internship-py-1-1'.  
 ```  
   
+---  
   
