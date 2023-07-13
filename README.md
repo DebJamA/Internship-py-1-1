@@ -1,5 +1,7 @@
 # Project: Financial Market News Blog (Internship-py-1-1)  
   
+---  
+  
 ## Project Description
   
 Scenario: I was hired by Simco Financial Services, Inc. (a fictional company) as a Python Developer on their Software Development Team.  
