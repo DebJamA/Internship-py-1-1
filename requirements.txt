@@ -1,5 +1,2 @@
 #30MAY2023 Python 3.11.3
-Flask==2.3.2 #01MAY2023 - for building web aps
-Jinja2==3.1.2 #28APR2022 - template engine
-Flask-SQLAlchemy==3.0.3 #31JAN2023 - for ORM
-Flask-Login==0.6.2 #25JULY2022 - for Flask user authentication and session management
+Flask #for building web aps
