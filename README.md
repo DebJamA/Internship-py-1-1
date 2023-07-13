@@ -25,9 +25,15 @@ ___
   
 ## Project Tools  
   
-![Python logo](https://staging.python.org/static/community_logos/python-logo.png "Python" =100x) ![Flask logo](https://flask.palletsprojects.com/en/2.3.x/_images/flask-horizontal.png "Flask" =90x) ![Git logo](https://git-scm.com/images/logos/logomark-orange@2x.png "Git" =40x)   
-  
-![Firebase logo](https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-logomark.png "Firebase" =35x) ![Heroku logo](https://pbs.twimg.com/profile_images/689518720998252544/mOobZd_8_400x400.png "Heroku" =40x) ![HTML5 logo](https://www.w3.org/html/logo/img/mark-word-icon.png "HTML5" =50x) ![CSS3 logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649 "CSS3" =30x)    
+Python  
+Flask  
+Git  
+PyCharm  
+Firebase  
+Heroku  
+JSON  
+HTML5  
+CSS3  
   
 ___  
   
