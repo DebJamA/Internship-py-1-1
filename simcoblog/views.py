@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Flask, Blueprint
 
 views = Blueprint("views", __name__)
 
