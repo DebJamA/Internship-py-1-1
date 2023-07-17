@@ -1,9 +1,9 @@
 {
-        "apiKey": "AIzaSyBu02eP2ND72u0KOW8cZISH4tr6otuE1RQ",
+        "apiKey": "apiKey",
         "authDomain": "simco-financial-analyst-blog.firebaseapp.com",
         "databaseURL": "https://simco-financial-analyst-blog-default-rtdb.firebaseio.com",
         "projectId": "simco-financial-analyst-blog",
         "storageBucket": "simco-financial-analyst-blog.appspot.com",
-        "messagingSenderId": "489047435635",
-        "appId": "1:489047435635:web:5f87aad06f8f1162f83d06"
+        "messagingSenderId": "SenderId",
+        "appId": "#:###:web:appId"
 }
