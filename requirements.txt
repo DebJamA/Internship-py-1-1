@@ -1,6 +1,6 @@
-#27JUNE2023 Python 3.11.3
-firebase #firebase REST API's
-firebase-admin #allows you to manage users and validate tokens
-Flask #for building web aps
+Flask #for building web apps
 Jinja2 #template engine
+firebase #Firebase REST APIs
+firebase-admin #allows you to manage users and validate tokens
+jsonschema #JSON Schema validation
 gunicorn #to deploy Flask app to Heroku
