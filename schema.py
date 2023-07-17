@@ -1,72 +1,83 @@
 from jsonschema import validate
 
-schema_2020_12 = {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "type": "array",
-  "items": [
-    {
-      "type": "object",
-      "properties": {
-        "post_id": {
-          "type": "integer"
+schema = {
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/posts",
+    "definitions": {
+        "posts": {
+            "type": "object",
+            "properties": {
+                "blog": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/definitions/Blog"
+                    }
+                }
+            },
+            "required": [
+                "blog"
+            ],
+            "title": "posts"
         },
-        "category": {
-          "type": "string"
-        },
-        "date_posted": {
-          "type": "string"
-        },
-        "article": {
-          "type": "object",
-          "properties": {
-            "article_title": {
-              "type": "string"
+        "Blog": {
+            "type": "object",
+            "properties": {
+                "post_id": {
+                    "type": "integer"
+                },
+                "analyst": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "date_posted": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "article_title": {
+                    "type": "string"
+                },
+                "article": {
+                    "type": "string"
+                },
+                "summary_title": {
+                    "type": "string"
+                },
+                "summary": {
+                    "type": "string"
+                }
             },
-            "full_article": {
-              "type": "string"
-            },
-            "username": {
-              "type": "string"
-            },
-            "summary_title": {
-              "type": "string"
-            },
-            "summary": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "article_title",
-            "full_article",
-            "username",
-            "summary_title",
-            "summary"
-          ]
+            "required": [
+                "analyst",
+                "article",
+                "article_title",
+                "category",
+                "date_posted",
+                "post_id",
+                "summary",
+                "summary_title"
+            ],
+            "title": "Blog"
         }
-      },
-      "required": [
-        "post_id",
-        "category",
-        "date_posted",
-        "article"
-      ]
     }
-  ]
 }
 
 validate(
     instance={
-      "post_id": 1,
-      "category": "wealth",
-      "date_posted": "05/11/2023",
-      "article": {
-        "article_title": "pariatur quis sit et ex",
-        "full_article": "Enim consequat aliquip in amet fugiat. Fugiat exercitation proident culpa ullamco laboris",
-        "username": "Alonzo Johnson",
-        "summary_title": "deserunt cupidatat",
-        "summary": "Dolore qui fugiat excepteur excepteur tempor in sunt irure",
-      },
+        "blog": {
+            "post0": {
+                "post_id": 0,
+                "analyst": "Alberta Jast",
+                "category": "Wealth",
+                "date_posted": "2023-06-11",
+                "article_title": "BigBiz CEO Net Worth Increases",
+                "article": "BigBiz CEO velit adipisicing laborum laborum tempor duis...",
+                "summary_title": "BigBiz Stock Will Rise Too",
+                "summary": "BigBiz stock culpa est adipisicing..."
+            },
+        },
     },
-    schema=schema_2020_12,
+    schema=schema,
 )
-# Given JSON data is Valid
+print("Given JSON data is Valid")
