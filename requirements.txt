@@ -1,3 +1,2 @@
-#27JUNE2023 Python 3.11.3
 Flask #for building web apps
 Jinja2 #template engine
