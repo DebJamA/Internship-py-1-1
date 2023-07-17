@@ -1,6 +1,6 @@
-from researchblog import create_app
+from simcoblog import create_app
 
-application = create_app()
+simcoblog = create_app()
 
 if __name__ == "__main__":
-    application.run(debug=False)
+    simcoblog.run(debug=False)
