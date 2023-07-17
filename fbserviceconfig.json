@@ -1,10 +1,10 @@
 {
   "type": "service_account",
   "project_id": "simco-financial-analyst-blog",
-  "private_key_id": "279b2c5d2927053b2208429bbe486b8bdafc1b1f",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0YQBlUMpuY+tO\nwYjJ50lV0trYJyKcc9cS/jlIQCQG/GZHApN1EkW8HSSmiKwB95IkPTZa5xcdGPIs\n2NW8LAUkqFgi75cAEHxv1Un/YtnZU1Y7yToYQ2R7a6D/uWtN6HvLujCz6ElZsNwD\naNYHfLvffyb/oK6jiOdrH04qCtPQBx6Sag8hLgBrzSsRlUsu0YzLJWi3DVE7KzO0\nE8jZGlM/kVBZRWiGy0S2om8h9T0Kjs+4rOWoIcGWBfSe50vjOxuYGgKHZHmq6Mer\n8IqcKM5bB/h1Uq0MwfmWe7F1AwWXJijA4JB7G9CL6KrP2dg5X4RxZ4ygCNopnQEl\ngVpSGR8ZAgMBAAECggEAImqZsTsjjMGK3bmGmIOFVhdHw1NgQrrFkC2qj1MRrLWO\n7ECdEwrb/GMRIadVLoDmxPxa+Sg7nEUsvArZaTB7AL4QJwZQ6OW8YHgxSMW7LEC+\n5ORlrch6DSSBkRl3VGOl7z7E2Sbai/73U702jTIrBJ9VuROXDsPp5+IOv23WcUwA\nT+8OOndx929MN/AbW4+Zms5RAmoL5CVpTVvMtbCpzCINPAEYlBGHVjSLEaw8w05+\nlmNRNpeBpiFLTmvdoS6XUES2dsD0BY8amiRJd+ZDTuN4B6KRsVcOn0ZJdeI47LAJ\neQ2F1NFndx5ayAM7PbgBF2owdMXHjBJ+uWcQMEphCQKBgQDj3uEoD1VV3LuWRMIV\nipfzGeHvekvKyhHNBp0nfSbaSFCcs0G7PYt8wTvijbzaxTE9DOcGqM5DuCioBTKC\nqTTx1S+OM3dQQopHyXzxrPAR3YySDX2mO42iLFOFTA8pxdNhZ1cI9O0BjPvjFutI\nX9AeB9G/uClgEhRIeTFBNH+CNQKBgQDKpUx8DHAiZdoTqgZvrY+3D/YZ3wAajq0M\n/eC30/6zt1m7dSjvdeXTh/TUC2U4YhAYr+5Kzt+Hnnt7d9SpL56U+rvieKVRUZ8Y\n/o1xHIM4wYRjoSIMViDNFaXUJQdACxPSdE4moWV5lWHIhgbD/qGNjCr8syvs580f\n5e/8y3PF1QKBgQCKgyeAL1ni+Gr6m88SQw28UwZYiJFbslsBsryCjXu5ge2mYvxY\nsb+BVQBu5VNf9C/K+XXRQXkoBuCHyaj7bZlmSv0+RiCHo/rkSiDt0v6XDYHuIc83\n5clhQ+p9A0/QR5UHB0cLhb4vjCBs2LiqZLtgFca08GAOKs8zgp+jECNV5QKBgHhr\nAag1O+002QIWZvy2BlCiC3wUJ9ugLPUrZ/3U2+WvboMWe9zQEmJAyBu5Kcz3eNky\nskeB5xKP+pDEBHsE8RdWZ4+MYbCQ8BnKKgKtDs0LMcCCX9k01QkJdCE8X7KO4piM\nxGPwRHybaB/ghOSyyw1x3ZmMXu3IUPxDhviRbZqBAoGAPLvD/30HAzltSqSrKzSD\nT5Uwt47zVgCSwoEeHaXhG/dPILNADDSaLC2snuTrweyBqxhKGTtDuxfQq3Q6cIID\noQQEJAkpaT6D92tK26ykbRq6rmwty4Y7vAhAHsnWvwcAt7qncT1rFynj9W9eQfPH\n4Nu/SSpleRWzeEsa2snh86s=\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "privatekeyid",
+  "private_key": "-----BEGIN PRIVATE KEY-----\privatekey\n-----END PRIVATE KEY-----\n",
   "client_email": "firebase-adminsdk-124ry@simco-financial-analyst-blog.iam.gserviceaccount.com",
-  "client_id": "104611588062442453250",
+  "client_id": "clientid",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
