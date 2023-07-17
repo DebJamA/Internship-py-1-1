@@ -1,28 +1,31 @@
-# Internship-py-1-1  
+# Deploy web application on Heroku (py-1-5)  
   
-# Deploying my Flask app via Heroku  
-All the code and configuration for this app is in the main (defeault) branch of my Internship-py-1-1 repo.  
-  
-https://simco-blog-db547b91756b.herokuapp.com  
-  
-___
+___  
   
 ## Setting Up for Deployment  
+  
 1. Ensure app is running properly in local env  
+`% python main.py`  
   
-2. Update requirements.txt to include `guicorn` - when app is deployed to Heroku, these dependencies are automatically installed before app startup  
+3. Update requirements.txt to include `guicorn` - when app is deployed to Heroku, these dependencies are automatically installed before app startup  
   
-3. In the root of the application, create "Procfile" without an extension  
+4. In the root of the application, create `Procfile` without an extension  
   * Procfile tells Heroku which command(s) to run to start the app  
-  * `web: gunicorn -w 4 main`  
+  * > web: gunicorn -w 4 main  
   
-4. Create free Heroku account with payment method  
+5. Create free Heroku account with payment method  
   
-5. Install Heroku CLI
+6. Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) on Mac:  
+```
+% brew tap heroku/brew && brew install heroku
+```  
+Verify installation:  
+`% heroku --version`   
   
-___
+___  
   
 ## Creating Heroku App and Deploying App  
+  
 1. Log in to Heroku  
 `% heroku login`  
   
@@ -46,7 +49,6 @@ https://git.heroku.com/historic-haleakala-49710.git
 4. Refresh the Heroku page to see the app name:  
 ***historic-haleakala-49710***  
   
-  
 5. Rename the Heroku remote  
 `% heroku rename simco-blog`  
 ```
@@ -59,7 +61,6 @@ Git remote heroku updated
   
 6. Refresh the Heroku page to see the app name:  
 ***simco-blog***  
-  
   
 7. Confirm Heroku remote has been set for app  
 `% git remote -v`  
@@ -90,5 +91,7 @@ Output:
 Scaling dynos... done, now running web at 1:Basic  
 ```  
   
-10. Visit the app at this URL or use code  
+10. Visit the app at URL or use CLI  
 `% heroku open`  
+  
+  
