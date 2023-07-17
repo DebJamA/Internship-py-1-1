@@ -7,11 +7,13 @@ ___
 1. Ensure app is running properly in local env  
 `% python main.py`  
   
-3. Update requirements.txt to include `guicorn` - when app is deployed to Heroku, these dependencies are automatically installed before app startup  
+2. Update requirements.txt to include `guicorn` - when app is deployed to Heroku, these dependencies are automatically installed before app startup  
   
-4. In the root of the application, create `Procfile` without an extension  
+3. In the root of the application, create `Procfile` without an extension  
   * Procfile tells Heroku which command(s) to run to start the app  
-  * > web: gunicorn -w 4 main  
+	  > web: gunicorn -w 4 main  
+  
+4. Create `runtime.txt` to tell Heroku to use the same Python version used locally during development  
   
 5. Create free Heroku account with payment method  
   
