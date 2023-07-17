@@ -1,4 +1,4 @@
-# Internship-py-1-1:  Setup the Development Environment  
+# Setup the Development Environment (py-1-1)  
   
 ---  
   
